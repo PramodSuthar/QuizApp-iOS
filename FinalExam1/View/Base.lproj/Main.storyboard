@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalExam1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlV-a7-AxK">
+                                <rect key="frame" x="23" y="44" width="374" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="384" id="LRp-tY-XTd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HQE-Hp-I6J">
+                                <rect key="frame" x="23" y="993" width="374" height="2.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.2770131528" green="0.3800790906" blue="0.57570761439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" red="1" green="0.45854175089999999" blue="0.6605013609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7P-Gs-8Y2">
+                                <rect key="frame" x="23" y="592" width="374" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="True" backgroundImage="Rectangle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qli-HC-Esh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5v-TO-uPm">
+                                <rect key="frame" x="23" y="736" width="374" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="False" backgroundImage="Rectangle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRI-zX-Ipx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-UI-ek5">
+                                <rect key="frame" x="23" y="84" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PSE-ce-pMS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nes-3I-mZZ">
+                                <rect key="frame" x="23" y="880" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="g80-IP-6ME"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Skip" backgroundImage="Rectangle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIs-6o-MLp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53333333333333333" green="0.054901960784313725" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQE-Hp-I6J" firstAttribute="top" secondItem="nes-3I-mZZ" secondAttribute="bottom" constant="33" id="5J7-Ma-RKn"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="top" secondItem="K5v-TO-uPm" secondAttribute="bottom" constant="8" id="7hN-uG-m3D"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="leading" secondItem="HQE-Hp-I6J" secondAttribute="leading" id="Ffz-S3-3u2"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="leading" secondItem="ZlV-a7-AxK" secondAttribute="leading" id="IHE-Tx-R3Z"/>
+                            <constraint firstItem="ZlV-a7-AxK" firstAttribute="trailing" secondItem="V9u-UI-ek5" secondAttribute="trailing" id="NL8-EC-eHb"/>
+                            <constraint firstItem="V9u-UI-ek5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Rga-xQ-BZX"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="leading" secondItem="K5v-TO-uPm" secondAttribute="leading" id="c7l-08-JYz"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="trailing" secondItem="k7P-Gs-8Y2" secondAttribute="trailing" id="cUg-dO-o0P"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="trailing" secondItem="ZlV-a7-AxK" secondAttribute="trailing" id="gj5-av-htC"/>
+                            <constraint firstItem="k7P-Gs-8Y2" firstAttribute="top" secondItem="V9u-UI-ek5" secondAttribute="bottom" constant="487" id="hbM-bO-4Qb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZlV-a7-AxK" secondAttribute="trailing" constant="17" id="ja5-kH-WRD"/>
+                            <constraint firstItem="ZlV-a7-AxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oNr-hL-bgq"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="trailing" secondItem="K5v-TO-uPm" secondAttribute="trailing" id="szy-RN-SaR"/>
+                            <constraint firstItem="ZlV-a7-AxK" firstAttribute="leading" secondItem="V9u-UI-ek5" secondAttribute="leading" id="vRR-Wi-haQ"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="trailing" secondItem="HQE-Hp-I6J" secondAttribute="trailing" id="wns-mE-COd"/>
+                            <constraint firstItem="nes-3I-mZZ" firstAttribute="leading" secondItem="k7P-Gs-8Y2" secondAttribute="leading" id="xWv-pa-nQa"/>
+                            <constraint firstItem="K5v-TO-uPm" firstAttribute="top" secondItem="k7P-Gs-8Y2" secondAttribute="bottom" constant="8" id="zOJ-HM-fKH"/>
+                            <constraint firstItem="ZlV-a7-AxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="zvn-C0-RdZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionA" destination="k7P-Gs-8Y2" id="Ttb-38-iUd"/>
+                        <outlet property="optionB" destination="K5v-TO-uPm" id="UDC-va-DtK"/>
+                        <outlet property="optionC" destination="nes-3I-mZZ" id="vqe-Sf-QAG"/>
+                        <outlet property="questionLabel" destination="ZlV-a7-AxK" id="9vY-h9-hkV"/>
+                        <outlet property="userProgressBar" destination="HQE-Hp-I6J" id="LR7-8y-D0u"/>
+                        <outlet property="userScore" destination="V9u-UI-ek5" id="d4k-WX-oQM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="322" height="68"/>
+    </resources>
+</document>
